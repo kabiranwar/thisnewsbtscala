@@ -34,7 +34,7 @@ phases:
   build:
     commands:
       - sbt package
-      - ls
+      - ls -ltr
       - cd target && ls
       - cd scala-2.12 && ls
       # - command
