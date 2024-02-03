@@ -30,7 +30,7 @@ phases:
       - cat result.json
       - if [ $(jq -r '.projectStatus.status' result.json) = ERROR ] ; then $CODEBUILD_BUILD_SUCCEEDING -eq 0 ;fi
       - sbt package
-      - ls -ltr
+      #- ls -ltr
       - cd target && ls
       - cd scala-2.12 && ls
       # - command
